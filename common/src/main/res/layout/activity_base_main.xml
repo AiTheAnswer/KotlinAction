@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/base_layout_tile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_dp_60"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/base_img_back"
+            android:layout_width="@dimen/dimen_dp_60"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dimen_dp_10"
+            android:src="@drawable/ic_arrow_back_black" />
+
+        <TextView
+            android:id="@+id/base_txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/base_img_back"
+            android:layout_toStartOf="@+id/base_txt_right_title"
+            android:gravity="center"
+            android:textColor="@color/txt_black" />
+
+        <TextView
+            android:id="@+id/base_txt_right_title"
+            android:layout_width="@dimen/dimen_dp_60"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:textColor="@color/txt_black"
+
+            />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/base_layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
