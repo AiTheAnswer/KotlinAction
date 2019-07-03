@@ -38,6 +38,7 @@
         <option value="business_launch" />
         <option value="common" />
         <option value="core_basic" />
+        <option value="core_net" />
       </set>
     </option>
   </component>

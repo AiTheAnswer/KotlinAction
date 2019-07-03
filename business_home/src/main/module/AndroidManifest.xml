@@ -2,7 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.allen.business_home">
 
+    <!-- BaseApplication 主要用于各个业务组件和app壳工程中声明的 Application 类继承用的
+    ，只要各个业务组件和app壳工程中声明的Application类继承了 BaseApplication
+    ，当应用启动时 BaseApplication 就会被动实例化
+    ，这样从 BaseApplication 获取的 Context 就会生效
+    ，也就从根本上解决了我们不能直接从各个组件获取全局 Context 的问题 -->
     <application
+        android:name="com.allen.common.base.BaseApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"

@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/business_launch" />
             <option value="$PROJECT_DIR$/common" />
             <option value="$PROJECT_DIR$/core_basic" />
+            <option value="$PROJECT_DIR$/core_log" />
             <option value="$PROJECT_DIR$/core_net" />
           </set>
         </option>

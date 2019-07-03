@@ -1,1 +1,1 @@
-include ':app', ':common', ':core_basic', ':business_home', ':business_launch', ':core_net'
+include ':app', ':common', ':core_basic', ':business_home', ':business_launch', ':core_net', ':core_log'

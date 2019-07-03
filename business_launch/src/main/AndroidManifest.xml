@@ -4,15 +4,9 @@
 
     <application
         android:theme="@style/AppTheme"
-        android:name="com.allen.common.base.BaseApplication"
         >
-        <activity android:name=".LaunchActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".LaunchActivity"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>

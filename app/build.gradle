@@ -33,6 +33,7 @@ kapt {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation project(':common')
+    implementation project(':core_net')
     implementation project(':business_launch')
     implementation project(':business_home')
     kapt 'com.alibaba:arouter-compiler:1.1.1'

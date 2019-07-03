@@ -31,6 +31,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    /**
+     * 但是当项目处于集成模式的时候，每一个业务组件的 AndroidManifest.xml 都要合并到“app壳工程”中
+     * ，要是每一个业务组件都有自己的 Application 和 launch的Activity，那么合并的时候肯定会冲突。
+     * 让业务组件在集成模式和组件模式下使用不同的AndroidManifest.xml
+     */
     sourceSets{
         main{
             if(isDebug.toBoolean()){

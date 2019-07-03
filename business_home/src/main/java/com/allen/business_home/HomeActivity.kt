@@ -35,7 +35,6 @@ class HomeActivity : BaseActivity(), View.OnClickListener {
     enum class TabMenu {
 
         DAILY_SELECT,//每日精选
-
         FOUND,//发现
         HOT,//热门
         MINE//我的
